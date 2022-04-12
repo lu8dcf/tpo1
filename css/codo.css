@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body, header, footer, main, section{
+    background: green;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    border: 7px green;
+
+}
+
+
+article, aside{
+    border: 7px lightgreen;
+}
+
+header {
+    background: rgb(121, 211, 136);
+}
+.header-logo{
+    height: auto;
+    display: inline-block;
+    margin: 2rem;
+}
+.header-menu{
+    position: relative;
+    top: auto;
+    display: inline-block;
+}
+.header-menu ul {
+    
+    background: linear-gradient(green lightgreen
+    );
+}
+.header-menu li {
+    float: left;
+}
+
+.header-menu li a {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    border: 4px solid black;
+    margin: auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.contenedor > div {
+    display: block;
+    padding: 10px;
+    color: coral;
+    background: blue;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.25);
+}
+
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+@font-face 
+{
+    font-family: "fuente1";
+    src: url('font/TASTY DONUTS.otf');
+}
+
+    
+.cosito{
+    color:pink;
+    font-size:20px
+}
+
+h1 em {color:blue;}
+
+h1>strong {color:red;}
+
+
+p:first-child{color:blue;}
+p:last-child{color:blueviolet;}
