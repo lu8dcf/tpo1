@@ -1,0 +1,8 @@
+.contenedor {
+    display: grid;                      /* es grilla */
+    grid-template-columns: minmax(350px, 1fr) 1fr .5fr; /* cantidad de columnas y resp anchos*/
+    grid-template-rows: minmax(150px, 200px) 150px 300px;    /* cantidad de filas y anchos */
+
+    grid-gap: 20px;                     /* separacion entre columnas*/
+    height: 500px;                      /* alto del contenedor*/
+}
