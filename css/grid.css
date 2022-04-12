@@ -1,8 +1,49 @@
+
+
+
+
+.foto1 {grid-area: f1;}
+.titu1 {grid-area: t1;}
+.titu2 {grid-area: t2;}
+.menu1 {grid-area: m1;}
+.menu2 {grid-area: m2;}
+.menu3 {grid-area: m3;}
+.menu4 {grid-area: m4;}
+
+
 .cabeza {
     display: grid;                      /* es grilla */
-    grid-template-columns: minmax(350px, 1fr) 1fr .5fr; /* cantidad de columnas y resp anchos*/
-    grid-template-rows: minmax(150px, 200px) 150px 300px;    /* cantidad de filas y anchos */
+    width: 90%;
+    max-width: 1000px;
+    border: 4px solid #39AEA9;
+    margin: auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    
+    
 
-    grid-gap: 20px;                     /* separacion entre columnas*/
-    height: 500px;                      /* alto del contenedor*/
+    grid-template-areas:
+        't1 t1 t1 t1 t1 t1'
+        'f1 f1 t2 t2 t2 t2'
+        'f1 f1 co co co co'
+        'f1 f1 m1 m2 m3 m4';
+    grid-gap: 10px;
+    background-color: #A2D5AB;
+    padding: 10px;
+
+}
+
+
+
+.grid-container {
+    display: grid;
+    
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
 }
