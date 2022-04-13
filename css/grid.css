@@ -9,16 +9,19 @@ h1 {
 .titu1 {grid-area: t1;}
 .titu2 {grid-area: t2;}
 .menu1 {grid-area: m1;}
+    
 .menu2 {grid-area: m2;}
 .menu3 {grid-area: m3;}
 .menu4 {grid-area: m4;}
-
+/*.menu1,.menu2,.menu3,.menu4*/
 .menu1,.menu2,.menu3,.menu4 {
     background-image: linear-gradient(#E5EFC1, #557B83);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-style: black 3px double;
 }
+
+
 .cabeza {
     display: grid;
     grid-template-columns: repeat(6, 1fr);                      /* es grilla */
@@ -104,7 +107,10 @@ footer {
     border-top-left-radius: 17px;
 
 }
-
+/* cambio de botones cuando esta sobre ellos*/
+.menu1:hover,.menu2:hover,.menu3:hover,.menu4:hover,.foo2:hover,
+.foo3:hover,.foo4:hover {
+    background-image: linear-gradient(#557B83, #E5EFC1);}
 
 @media only screen and (max-width: 600px) {
     /* For mobile phones: */
