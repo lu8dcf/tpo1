@@ -7,7 +7,6 @@ h1 {
 .foto1 {grid-area: f1;
          height: 260px;}
 .titu1 {grid-area: t1;}
-         
 .titu2 {grid-area: t2;}
 .menu1 {grid-area: m1;}
 .menu2 {grid-area: m2;}
@@ -42,19 +41,71 @@ h1 {
 
 }
 
-
-
-.grid-container {
-    display: grid;
+.art1 {grid-area: a1;}
+.art2 {grid-area: a2;
+    text-align: center;}
+.vid1 {grid-area: v1;
     
+    width: fr;}
+.nada {grid-area: nd;
+        background-color:  #557B83;}
+
+.art1,.art2,.vid1{
+    border: 4px solid #39AEA9;
+    background-color: #A2D5AB;
+    padding: 10px;
+    border-top-left-radius: 17px;
 }
 
-.grid-container>div {
-    background-color: rgba(255, 255, 255, 0.8);
+article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);                      /* es grilla */
+    width: 90%;
+    max-width: 1000px;
+    border: 4px solid #557B83;
+    margin: auto;
+    font-size: 20px;
+    line-height: 30px;
     text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+    
+    grid-template-areas:
+        'a1 a1 nd nd '
+        'a2 a2 v1 v1 '
+        'a2 a2 v1 v1';
+        
+    grid-gap: 10px;
+    background-color: #557B83;
+    padding: 10px;
+
 }
+.foo1 {grid-area: c1;}
+.foo2 {grid-area: c2;}
+.fo03 {grid-area: c3;}
+.foo4 {grid-area: c4;}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);                      /* es grilla */
+    width: 90%;
+    max-width: 600px;
+    border: 4px solid #39AEA9;
+    margin: auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    
+    grid-template-areas:
+        'c1 c1 c1'
+        'c2 c3 c4';
+    grid-gap: 10px;
+    background-color: #A2D5AB;
+    padding: 10px;
+    justify-content:space-around;
+    border-top-left-radius: 17px;
+
+}
+
+
 @media only screen and (max-width: 600px) {
     /* For mobile phones: */
     .cabeza {
@@ -82,6 +133,30 @@ h1 {
     .foto1{
         height: 200px;
     }
+
+    article{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);                      /* es grilla */
+        width: 97%;
+        max-width: 764px;
+        border: 4px solid #557B83;
+        margin: auto;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        
+        grid-template-areas:
+            'a1 a1  '
+            'a2 a2  '
+            'a2 a2 '
+            'v1 v1'
+            'v1 v1';
+        grid-gap: 10px;
+        background-color: #557B83;
+        padding: 10px;
+
+    }
+    
   }
 
 /*.titu1 {-webkit-text-fill-color: rgb(168, 200, 164);
