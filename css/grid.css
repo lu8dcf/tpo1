@@ -139,7 +139,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);                      /* es grilla */
         width: 97%;
         max-width: 764px;
-        border: 4px solid #39AEA9;
+        
         margin: auto;
         font-size: 20px;
         line-height: 30px;
@@ -152,7 +152,7 @@ footer {
             'v1 v1'
             'v1 v1';
         grid-gap: 10px;
-        background-color: #A2D5AB;
+        
         padding: 10px;
 
     }
