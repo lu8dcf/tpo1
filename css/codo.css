@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+
+
 html{
     height: 100%;
 }
@@ -24,8 +26,6 @@ article, aside{
 
 
 
-
-
 /*
 
 .cabeza > div {
@@ -39,7 +39,7 @@ article, aside{
 
 
 .izq {/*movimiento*/
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-name: mueveizq;
       }
   
@@ -55,7 +55,7 @@ article, aside{
 
 
 .der {
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-name: mueveder;
     
   }
