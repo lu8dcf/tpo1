@@ -11,7 +11,6 @@ h1 {
 .titu1 {grid-area: t1;}
 .titu2 {grid-area: t2;}
 .menu1 {grid-area: m1;}
-    
 .menu2 {grid-area: m2;}
 .menu3 {grid-area: m3;}
 .menu4 {grid-area: m4;}
@@ -22,7 +21,25 @@ h1 {
     border-top-right-radius: 7px;
     border-style: black 3px double;
 }
+.art1 {grid-area: a1;}
+.art2 {grid-area: a2;
+        text-align: center;}
+.vid1 {grid-area: v1;
+        width: fr;}
+.art3 {grid-area: a3;}
+.nada {grid-area: nd;
+        background-color:  #557B83;}
 
+.art1,.art2,.art3,.vid1,.titu2{
+    border: 4px solid #39AEA9;
+    background-color: #A2D5AB;
+    padding: 10px;
+    border-top-left-radius: 17px;
+}
+.foo1 {grid-area: c1;}
+.foo2 {grid-area: c2;}
+.fo03 {grid-area: c3;}
+.foo4 {grid-area: c4;}
 
 .cabeza {
     display: grid;
@@ -45,23 +62,6 @@ h1 {
     padding: 10px;
 
 }
-
-.art1 {grid-area: a1;}
-.art2 {grid-area: a2;
-    text-align: center;}
-.vid1 {grid-area: v1;
-    
-    width: fr;}
-.nada {grid-area: nd;
-        background-color:  #557B83;}
-
-.art1,.art2,.vid1{
-    border: 4px solid #39AEA9;
-    background-color: #A2D5AB;
-    padding: 10px;
-    border-top-left-radius: 17px;
-}
-
 article {
     display: grid;
     grid-template-columns: repeat(4, 1fr);                      /* es grilla */
@@ -81,7 +81,6 @@ article {
     grid-gap: 10px;
     background-color: #557B83;
     padding: 10px;
-
 }
 .concur {
     display: grid;
@@ -93,21 +92,14 @@ article {
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    
-           
+ 
     grid-gap: 10px;
     background-color: #557B83;
     padding: 10px;grid-template-areas:
         'a1 a1 nd nd '
         'a2 a2 a2 a2 '
         'a2 a2 a2 a2';
-
 }
-.foo1 {grid-area: c1;}
-.foo2 {grid-area: c2;}
-.fo03 {grid-area: c3;}
-.foo4 {grid-area: c4;}
-
 footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);                      /* es grilla */
@@ -127,8 +119,31 @@ footer {
     padding: 10px;
     justify-content:space-around;
     border-top-left-radius: 17px;
-
 }
+.parc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);                      /* es grilla */
+    width: 90%;
+    max-width: 1000px;
+    border: 4px solid #557B83;
+    margin: auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    
+    grid-template-areas:
+        'nd t2 t2 co'
+        'a1 a1 a1 a1'
+        'a2 a2 v1 v1'
+        'a2 a2 v1 v1'
+        'a3 a3 a3 a3';
+        
+    grid-gap: 10px;
+    background-color: #557B83;
+    padding: 10px;
+}
+
+
 /* cambio de botones cuando esta sobre ellos*/
 .menu1:hover,.menu2:hover,.menu3:hover,.menu4:hover,.foo2:hover,
 .foo3:hover,.foo4:hover {
@@ -203,4 +218,27 @@ footer {
         padding: 10px;
         justify-content:space-around;
         border-top-left-radius: 17px;}
+    
+        .parc {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);                      /* es grilla */
+            width: 90%;
+            max-width: 1000px;
+            border: 4px solid #557B83;
+            margin: auto;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            
+            grid-template-areas:
+                't2 t2'
+                'a1 a1 '
+                'a2 a2 '
+                'v1 v1 '
+                'a3 a3 ';
+                
+            grid-gap: 10px;
+            background-color: #557B83;
+            padding: 10px;
+        }
   }
