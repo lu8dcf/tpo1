@@ -3,29 +3,19 @@
     margin: 0;
     padding: 0;
 }
-
-
-
 html{
     height: 100%;
 }
-
 body, header, footer, main, section{
     background: #557B83;
     color: black;
     font-family: 'Roboto', sans-serif;
     border: 7px #39AEA9;
-
 }
-
-
 article, aside{
     background:#E5EFC1;
     border: 7px black;
 }
-
-
-
 /*
 
 .cabeza > div {
@@ -35,13 +25,10 @@ article, aside{
     background: #A2D5AB;
     box-shadow: 5px 5px 10px rgba(0,0,0,.25);
 } */
-
-
-
 .izq {/*movimiento*/
     animation-duration: 4s;
     animation-name: mueveizq;
-      }
+}
   
   @keyframes mueveizq {
     from {margin-left: 100%; width: 0%; }
@@ -52,13 +39,10 @@ article, aside{
         75%  {color: green;}
         100% {color: brown;}
   }
-
-
 .der {
     animation-duration: 4s;
     animation-name: mueveder;
-    
-  }
+}
   
   @keyframes mueveder
    { 
