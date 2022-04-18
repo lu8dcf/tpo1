@@ -39,97 +39,66 @@ h1 {
 }
 .foo1 {grid-area: c1;}
 .foo2 {grid-area: c2;}
-.fo03 {grid-area: c3;}
+.foo3 {grid-area: c3;}
 .foo4 {grid-area: c4;}
+.foo5 {grid-area: c5;}
 
-.cabeza {
+.cabeza, article,.concur,footer,.parc,.columna,.form{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);                      /* es grilla */
     width: 90%;
     max-width: 1000px;
-    border: 4px solid #39AEA9;
     margin: auto;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    
+    grid-gap: 10px;
+    background-color: #A2D5AB;
+    padding: 10px;    
+}
+
+.cabeza {
+    border: 4px solid #39AEA9;
+    grid-template-columns: repeat(6, 1fr);                      /* es grilla */
     grid-template-areas:
         'f1 f1 CI t1 t1 t1'
         'f1 f1 CI t2 t2 t2'
         'f1 f1 co co co co'
         'f1 f1 m1 m2 m3 m4';
-    grid-gap: 10px;
-    background-color: #A2D5AB;
-    padding: 10px;
-
 }
 article {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);                      /* es grilla */
-    width: 90%;
-    max-width: 1000px;
     border: 4px solid #557B83;
-    margin: auto;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    
     grid-template-areas:
         'a1 a1 nd nd '
         'a2 a2 v1 v1 '
         'a2 a2 v1 v1';
-        
-    grid-gap: 10px;
     background-color: #557B83;
-    padding: 10px;
 }
 .concur {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);                      /* es grilla */
-    width: 90%;
-    max-width: 1000px;
     border: 4px solid #557B83;
-    margin: auto;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
- 
-    grid-gap: 10px;
     background-color: #557B83;
-    padding: 10px;grid-template-areas:
+    grid-template-areas:
         'a1 a1 nd nd '
         'a2 a2 a2 a2 '
         'a2 a2 a2 a2';
 }
 footer {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);                      /* es grilla */
-    width: 90%;
-    max-width: 600px;
     border: 4px solid #39AEA9;
     margin: auto;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    
     grid-template-areas:
         'c1 c1 c1'
-        'c2 c3 c4';
-    grid-gap: 10px;
+        'c2 c3 c4'
+        'c5 c5 c5';
     background-color: #A2D5AB;
-    padding: 10px;
     justify-content:space-around;
     border-top-left-radius: 17px;
+    max-width:400px;
 }
 .parc {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);                      /* es grilla */
-    width: 90%;
-    max-width: 1000px;
     border: 4px solid #557B83;
-    margin: auto;
-    font-size: 20px;
-    line-height: 30px;
     text-align: center;
     
     grid-template-areas:
@@ -138,12 +107,28 @@ footer {
         'a2 a2 v1 v1'
         'a2 a2 v1 v1'
         'a3 a3 a3 a3';
-        
-    grid-gap: 10px;
     background-color: #557B83;
-    padding: 10px;
+    
 }
-
+.columna {
+    grid-template-columns: repeat(4, 1fr);                      /* es grilla */
+    border: 4px solid #557B83;
+    grid-template-areas:
+        'nd a1 a1 a2'
+        'nd a1 a1 a2';
+    background-color: #557B83;
+}
+.form {
+    grid-template-columns: repeat(3, 1fr);                      /* es grilla */
+    border: 4px solid #39AEA9;
+    grid-template-areas:
+        'c1 c1 c1'
+        'c2 c3 c4'
+        'c5 c5 c5';
+    background-color: #A2D5AB;
+    border-top-left-radius: 17px;
+    max-width: 800px;
+}
 
 /* cambio de botones cuando esta sobre ellos*/
 .menu1:hover,.menu2:hover,.menu3:hover,.menu4:hover,.foo2:hover,
@@ -152,26 +137,28 @@ footer {
 
 @media only screen and (max-width: 600px) {
     /* For mobile phones: */
-    .cabeza {
+    .cabeza,article,.footer,.form,.parc {
+        grid-gap: 10px;
+        padding: 10px;
         display: grid;
+        font-size: 20px;
+        line-height: 30px;
+        margin: auto;
+    }
+    
+    
+    .cabeza {
         grid-template-columns: repeat(4, 1fr);                      /* es grilla */
         width: 97%;
         max-width: 600px;
-        
-        margin: auto;
-        font-size: 20px;
-        line-height: 30px;
         text-align: center;
-        
         grid-template-areas:
             't1 t1 t1 t1'
             't2 t2 t2 t2'
             'f1 f1 f1 f1'
             'f1 f1 f1 f1'
             'm1 m2 m3 m4';
-        grid-gap: 10px;
         
-        padding: 10px;
        
     }
     .foto1{
@@ -179,67 +166,60 @@ footer {
     }
 
     article{
-        display: grid;
         grid-template-columns: repeat(2, 1fr);                      /* es grilla */
         width: 97%;
         max-width: 764px;
-        
-        margin: auto;
-        font-size: 20px;
-        line-height: 30px;
         text-align: center;
-        
         grid-template-areas:
             'a1 a1  '
             'a2 a2  '
             'a2 a2 '
             'v1 v1'
             'v1 v1';
-        grid-gap: 10px;
         background-color: #557B83;
-        padding: 10px;
+        
 
     }
     footer {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);                      /* es grilla */
         width: 90%;
         max-width: 600px;
         border: 4px solid #39AEA9;
-        margin: auto;
-        font-size: 20px;
-        line-height: 30px;
         text-align: center;
-        
         grid-template-areas:
             'c1 c1 c1'
             'c2 c3 c4';
-        grid-gap: 10px;
         background-color: #A2D5AB;
-        padding: 10px;
         justify-content:space-around;
         border-top-left-radius: 17px;}
     
-        .parc {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);                      /* es grilla */
-            width: 90%;
-            max-width: 1000px;
-            border: 4px solid #557B83;
-            margin: auto;
-            font-size: 20px;
-            line-height: 30px;
-            text-align: center;
+    .parc {
             
-            grid-template-areas:
+        grid-template-columns: repeat(2, 1fr);                      /* es grilla */
+        width: 90%;
+        max-width: 1000px;
+        border: 4px solid #557B83;
+        text-align: center;
+        grid-template-areas:
                 't3 t3'
                 'a1 a1 '
                 'a2 a2 '
                 'v1 v1 '
                 'a3 a3 ';
-                
-            grid-gap: 10px;
-            background-color: #557B83;
-            padding: 10px;
+        background-color: #557B83;
+            
+        }
+        .form {
+            grid-template-columns: repeat(1, 1fr);                      /* es grilla */
+            border: 4px solid #39AEA9;
+            grid-template-areas:
+                'c1 '
+                'c2 '
+                'c3 '
+                'c4'
+                'c5';
+            background-color: #A2D5AB;
+            border-top-left-radius: 17px;
+            max-width: 800px;
         }
   }
