@@ -138,7 +138,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
     /* For mobile phones: */
-    .cabeza,article,.footer,.form,.parc,.concur {
+    .cabeza,article,.footer,.form,.parc,.concur.form {
         grid-gap: 10px;
         padding: 10px;
         display: grid;
@@ -146,10 +146,8 @@ footer {
         line-height: 30px;
         margin: auto;
     }
-    
     .concur {
         grid-template-columns: repeat(2, 1fr);                      /* es grilla */
-        
         grid-template-areas:
             'a1 a1  '
             'a2 a2  '
@@ -166,13 +164,10 @@ footer {
             'f1 f1 f1 f1'
             'f1 f1 f1 f1'
             'm1 m2 m3 m4';
-        
-       
     }
     .foto1{
         height: 200px;
     }
-
     article{
         grid-template-columns: repeat(2, 1fr);                      /* es grilla */
         width: 97%;
@@ -186,7 +181,6 @@ footer {
             'v1 v1';
         background-color: #557B83;
     }
-
     footer {
         grid-template-columns: repeat(3, 1fr);                      /* es grilla */
         width: 90%;
@@ -201,10 +195,9 @@ footer {
         border-top-left-radius: 17px;}
     
     .parc {
-            
         grid-template-columns: repeat(2, 1fr);                      /* es grilla */
         width: 90%;
-        max-width: 1000px;
+        max-width: 600px;
         border: 4px solid #557B83;
         text-align: center;
         grid-template-areas:
@@ -214,19 +207,18 @@ footer {
                 'v1 v1 '
                 'a3 a3 ';
         background-color: #557B83;
-            
-        }
-        .form {
-            grid-template-columns: repeat(1, 1fr);                      /* es grilla */
+    }
+    .form {
+            grid-template-columns: repeat(2, 1fr);                      /* es grilla */
             border: 4px solid #39AEA9;
             grid-template-areas:
-                'c1 '
-                'c2 '
-                'c3 '
-                'c4'
-                'c5';
+                'c1 c1'
+                'c2 c2'
+                'c3 c3'
+                'c4 c4'
+                'c5 c5';
             background-color: #A2D5AB;
             border-top-left-radius: 17px;
-            max-width: 800px;
+            max-width: 600px;
         }
   }
