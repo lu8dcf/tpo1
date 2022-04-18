@@ -10,6 +10,7 @@ h1 {
          height: 260px;}
 .titu1 {grid-area: t1;}
 .titu2 {grid-area: t2;}
+.titu3 {grid-area: t3;}
 .menu1 {grid-area: m1;}
 .menu2 {grid-area: m2;}
 .menu3 {grid-area: m3;}
@@ -30,7 +31,7 @@ h1 {
 .nada {grid-area: nd;
         background-color:  #557B83;}
 
-.art1,.art2,.art3,.vid1,.titu2{
+.art1,.art2,.art3,.vid1,.titu3{
     border: 4px solid #39AEA9;
     background-color: #A2D5AB;
     padding: 10px;
@@ -132,7 +133,7 @@ footer {
     text-align: center;
     
     grid-template-areas:
-        'nd t2 t2 co'
+        'nd t3 t3 co'
         'a1 a1 a1 a1'
         'a2 a2 v1 v1'
         'a2 a2 v1 v1'
@@ -231,7 +232,7 @@ footer {
             text-align: center;
             
             grid-template-areas:
-                't2 t2'
+                't3 t3'
                 'a1 a1 '
                 'a2 a2 '
                 'v1 v1 '
