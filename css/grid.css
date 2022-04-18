@@ -137,7 +137,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
     /* For mobile phones: */
-    .cabeza,article,.footer,.form,.parc {
+    .cabeza,article,.footer,.form,.parc,.concur {
         grid-gap: 10px;
         padding: 10px;
         display: grid;
@@ -146,7 +146,14 @@ footer {
         margin: auto;
     }
     
-    
+    .concur {
+        grid-template-columns: repeat(2, 1fr);                      /* es grilla */
+        
+        grid-template-areas:
+            'a1 a1  '
+            'a2 a2  '
+            'a2 a2 ';
+    }
     .cabeza {
         grid-template-columns: repeat(4, 1fr);                      /* es grilla */
         width: 97%;
@@ -177,9 +184,8 @@ footer {
             'v1 v1'
             'v1 v1';
         background-color: #557B83;
-        
-
     }
+
     footer {
         grid-template-columns: repeat(3, 1fr);                      /* es grilla */
         width: 90%;
