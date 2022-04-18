@@ -61,10 +61,10 @@ h1 {
     border: 4px solid #39AEA9;
     grid-template-columns: repeat(6, 1fr);                      /* es grilla */
     grid-template-areas:
-        'f1 f1 CI t1 t1 t1'
-        'f1 f1 CI t2 t2 t2'
-        'f1 f1 co co co co'
-        'f1 f1 m1 m2 m3 m4';
+        'f1 f1 f1 t1 t1 t1'
+        'f1 f1 f1 t2 t2 t2'
+        'f1 f1 f1 co co co'
+        'nd nd m1 m2 m3 m4';
 }
 article {
     grid-template-columns: repeat(4, 1fr);                      /* es grilla */
@@ -221,4 +221,11 @@ footer {
             border-top-left-radius: 17px;
             max-width: 600px;
         }
+    .columna {
+        grid-template-columns: repeat(2, 1fr);                      /* es grilla */
+        border: 4px solid #557B83;
+        grid-template-areas:
+            'a1 a1 ';
+        background-color: #557B83;
   }
+}
