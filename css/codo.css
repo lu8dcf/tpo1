@@ -28,7 +28,7 @@ article, aside{
 .izq {/*movimiento*/
     animation-duration: 4s;
     animation-name: mueveizq;
-}
+      }
   
   @keyframes mueveizq {
     from {margin-left: 100%; width: 0%; }
