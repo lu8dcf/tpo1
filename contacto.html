@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/codo.css">
     <link rel="stylesheet" href="css/grid.css">
-
+    <link rel="stylesheet" media="all" href="css/botones.css" />
     <title>LU8DCF</title>
   </head>
   <body>
@@ -30,20 +30,15 @@
 
           <div class="titu2">por LU8DCF</div>
 
-          <div-a class="menu1"><a href="https://lu8dcf.github.io/tpo1/"
-            title="Inicio de paguina">Inicio</a></div-a>
+          <div-a class="menu1"> <a href="https://lu8dcf.github.io/tpo1/" title="Inicio de paguina">Inicio</a></div-a>
 
-          <div-a class="menu2"><a href="shack.html"
-            title="El Shack de Radio">Shack</a></div-a>
+          <div-a class="menu2"> <a href="shack.html" title="El Shack de Radio">Shack</a></div-a>
 
-          <div-a class="menu3"><a href="concursos.html"
-            title="Concursos Realizados">Concursos</a></div-a>
+          <div-a class="menu3"> <a href="concursos.html" title="Concursos Realizados">Concursos</a></div-a>
 
-          <div-a class="menu4"><a href="radioclub.html"       
-            title="Descripcion del Punta Alta Radio Club">Radio Club</a></div-a>
+          <div-a class="menu4"> <a href="radioclub.html" title="Descripcion del Punta Alta Radio Club">Radio Club</a></div-a>
 
-          <div-a class="menu5"><a href="contacto.html"
-            title="Contacto para informacion">Contacto</a></div-a>
+          <div-a class="menu5"> <a href="contacto.html" title="Contacto para informacion">Contacto</a></div-a>
         </div>
     </header>
     <main>
@@ -70,48 +65,43 @@
             <h3> Ubicacion del Radio Club</h3>
             <h4> 2 de Julio 793 - Punta Alta - Buenos Aires - Argentina    CP 8109</h4><br>
             
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d776.5162520853767!2d-62.07762942290149!3d-38.87675446815133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ed9d5f2ce71f65%3A0xfc68ef2b943a5442!2sPunta%20Alta%20Radio%20Club%20LU6DG!5e0!3m2!1ses-419!2sar!4v1647804018160!5m2!1ses-419!2sar" width="100%" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
+            
             </div>
         </div>
       </section>
       <section>
-        <div class="form">
-                <div class="foo1"><h2>Dejame tu comentario o consulta</h2></div>
+        <form name="fcontacto" action="https://formspree.io/f/xzbovkwp" method="POST" > 
+            <div class="form">
+            
+                <div class="foo1"><h2>Dejanos tu comentario o consulta</h2></div>
 
                 <div class="foo2">
-                <form action="https://formspree.io/f/xzbovkwp" method="POST" >
-                
-                    <label>
-                        Nombre:
-                        <input type="nombre" name="nombre">
-                    </label>
+                    <label>Nombre:<input type="nombre" name="nombre" maxlength="100"></label>
                 </div>
 
                 <div class="foo3">
-                    <label>
-                        Telefono:
-                        <input type="telefono" name="telefono">
-                    </label>
+                    <label>Telefono:<input type="telefono" name="telefono"></label>
                 </div>
 
                 <div class="foo4">
-                    <label>
-                        email:
-                    <input type="email" name="email">
-                    </label>
+                    <label>email:<input type="email" name="email"></label>
                 </div>
+
                 <div class="foo5">
-                    <label>
-                    Tu mensaje:
-                    <textarea name="message"></textarea>
-                    </label>
-                    <button type="submit">Send</button>
+                    <label>Tu mensaje:<textarea name="message"></textarea></label>
                 </div>
-            </form>
-        </div>
+
+                <div class="foo6">
+                    <input type="button" class="rainbow rainbow-5" value="Enviar" onclick="valida()">
+                </div>
+                    
+            </div>
+            <script src="js/contacto1.js"></script>  <!-- verificacion de formulario -->
+        </form>
       </section>
       <i class="fa-solid fa-walkie-talkie"></i>
     </main>
+    
     <footer>
       <div class="foo1"><h3> Para Contacto</h3></div>
       
@@ -129,6 +119,8 @@
         <a href="https://www.facebook.com/profile.php?id=100006587808179" target="_blank">
         <i class="fa-brands fa-facebook-square"></i></a>
       </div>
+
+      
     </footer>
-  </body>
+  </body> 
 </html>
