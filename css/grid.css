@@ -268,7 +268,7 @@ footer {
     .menu {
         grid-template-columns: repeat(4, 1fr);                      /* es grilla */
         width: 97%;
-        max-width: 600px;
+        max-width: 480px;
         text-align: center;
         grid-template-areas:
             't1 t1 t1 t1'
@@ -284,7 +284,7 @@ footer {
     article{
         grid-template-columns: repeat(2, 1fr);                      /* es grilla */
         width: 97%;
-        max-width: 764px;
+        max-width: 480px;
         text-align: center;
         grid-template-areas:
             'a1 a1  '
@@ -299,7 +299,7 @@ footer {
     .parc {
         grid-template-columns: repeat(2, 1fr);                      /* es grilla */
         width: 90%;
-        max-width: 600px;
+        max-width: 480px;
         border: 2px solid #557B83;
         text-align: center;
         grid-template-areas:
@@ -325,7 +325,7 @@ footer {
                 'c6 c6';
             background-color: #A2D5AB;
             border-top-left-radius: 17px;
-            max-width: 600px;
+            max-width: 480px;
         }
     .columna {
         grid-template-columns: repeat(2, 1fr);                      /* es grilla */
