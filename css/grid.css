@@ -153,7 +153,10 @@ footer {
 @media only screen and (max-width: 800px) {
     .carousel-item {
         height: 50vh;}
-
+    h1 {
+        font-size: 2em; 
+        }
+    
     /* For mobile phones: */
     .cabeza,article,.footer,.form,.parc,.concur.form {
         grid-gap: 8px;
@@ -241,7 +244,9 @@ footer {
 @media only screen and (max-width: 480px) {
     .carousel-item {
         height: 30vh;}
-
+    h1 {
+        font-size: 1.5em; 
+        }
     /* For mobile phones: */
     .cabeza,article,.footer,.form,.parc,.concur.form {
         grid-gap: 5px;
