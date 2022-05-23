@@ -156,11 +156,11 @@ footer {
 
     /* For mobile phones: */
     .cabeza,article,.footer,.form,.parc,.concur.form {
-        grid-gap: 10px;
-        padding: 10px;
+        grid-gap: 8px;
+        padding: 8px;
         display: grid;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 15px;
+        line-height: 20px;
         margin: auto;
     }
     .concur {
@@ -244,11 +244,11 @@ footer {
 
     /* For mobile phones: */
     .cabeza,article,.footer,.form,.parc,.concur.form {
-        grid-gap: 10px;
-        padding: 10px;
+        grid-gap: 5px;
+        padding: 5px;
         display: grid;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 15px;
+        line-height: 15px;
         margin: auto;
     }
     .concur {
@@ -293,7 +293,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);                      /* es grilla */
         width: 90%;
         max-width: 600px;
-        border: 4px solid #557B83;
+        border: 2px solid #557B83;
         text-align: center;
         grid-template-areas:
                 't3 t3'
@@ -307,7 +307,7 @@ footer {
     }
     .form {
             grid-template-columns: repeat(2, 1fr);                      /* es grilla */
-            border: 4px solid #39AEA9;
+            border: 2px solid #39AEA9;
             text-align: right;
             grid-template-areas:
                 'c1 c1'
@@ -322,7 +322,7 @@ footer {
         }
     .columna {
         grid-template-columns: repeat(2, 1fr);                      /* es grilla */
-        border: 4px solid #557B83;
+        border: 2px solid #557B83;
         grid-template-areas:
             'a1 a1 ';
         background-color: #557B83;
