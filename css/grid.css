@@ -15,6 +15,7 @@ h1 {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-style: black 3px double;
+    font-family: 'Roboto', sans-serif;
 }
 /* cambio de botones cuando esta sobre ellos*/
 .menu1:hover,.menu2:hover,.menu3:hover,.menu4:hover,.menu5:hover {
@@ -38,6 +39,7 @@ h1 {
     background-color: #A2D5AB;
     padding: 10px;
     border-top-left-radius: 17px;
+    font-family: 'Roboto', sans-serif;
 }
 .foo1 {grid-area: c1;}
 .foo2 {grid-area: c2;}
