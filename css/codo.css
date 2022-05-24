@@ -21,6 +21,7 @@ article, aside{
 .carousel-item {
     height: 65vh;
     min-height: 100px;
+    min-width: 300px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
